@@ -1,156 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mayur Ashtankar | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="nav-inner">
-      <div class="logo">Mayur<span class="accent">.</span></div>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Mayur Ashtankar</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero / Header Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Mayur Ashtankar Profile Picture" class="profile-img">
+      <h1>Mayur Ashtankar</h1>
+      <h2>Software Engineer | Java Developer</h2>
+      <p class="hero-tagline">Specializing in Java, Spring Boot, RESTful APIs, and Relational Databases</p>
+      
+      <div class="contact-badges">
+        <span><i class="fas fa-map-marker-alt"></i> Nagpur, Maharashtra, India</span>
+        <span><i class="fas fa-phone"></i> +91 8483862797</span>
+        <span><i class="fas fa-envelope"></i> ashtankarmayur@gmail.com</span>
+      </div>
+
+      <div class="social-links">
+        <a href="https://linkedin.com/in/mayur-ashtankar-7a5384240" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Mayur13-hash" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:ashtankarmayur@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <a href="#contact" class="btn">Get In Touch</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="home" class="hero reveal">
-    <div class="hero-content">
-      <h1>Hi, I'm <span class="accent">Mayur Ashtankar</span></h1>
-      <p class="subtitle">Software Developer passionate about building efficient and user-friendly applications.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn hero-btn">View Projects</a>
-        <a href="https://github.com/Mayur13-hash" target="_blank" class="btn hero-btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/mayur-ashtankar-7a5384240/" target="_blank" class="btn hero-btn">LinkedIn</a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="profile.jpg" alt="Mayur Ashtankar" class="profile">
-    </div>
-  </section>
+  <!-- Main Content Area -->
+  <main class="container">
 
-  <!-- ABOUT -->
-  <section id="about" class="section gray-bg reveal">
-    <h2 class="section-title">About Me</h2>
-    <p>I’m a B.Tech graduate in Electronics & Communication from Nagpur. I develop modern, responsive web apps using Java, React, and SQL to deliver efficient digital solutions.</p>
-  </section>
+    <!-- About / Professional Summary Section -->
+    <section id="about" class="card">
+      <h2><i class="fas fa-user-circle"></i> Professional Summary</h2>
+      <p>
+        Result-driven Software Engineer and Java Developer with hands-on expertise in backend architecture, web application development, RESTful APIs, Hibernate, and MySQL. Proven track record in building structured business logic, optimizing database performance, and delivering key modules for digital healthcare platforms. Demonstrates strong analytical and problem-solving capabilities anchored in Object-Oriented Programming (OOP), Agile methodologies, and modern web software development lifecycles.
+      </p>
+      <br>
+      <p><strong>Personal Interests:</strong> Tennis, Cricket, Tech Blogging</p>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section reveal">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">C / C++</div>
-      <div class="skill">Java</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React.js</div>
-      <div class="skill">HTML / CSS</div>
-      <div class="skill">SQL</div>
-    </div>
-  </section>
+    <!-- Core Technical Skills Section -->
+    <section id="skills" class="card">
+      <h2><i class="fas fa-code"></i> Core Technical Skills</h2>
+      <div class="skills-grid">
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section gray-bg reveal">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>🚌 Bus Pass Booking System</h3>
-        <p>Responsive booking platform with authentication and admin dashboard.</p>
-        <a href="https://mayur13-hash.github.io/bus-pass-booking/" target="_blank" class="btn small">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>📅 Task Scheduler App</h3>
-        <p>Task management app with reminders and drag-drop scheduling.</p>
-        <a href="https://mayur13-hash.github.io/task-scheduler/" target="_blank" class="btn small">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>💡 Electricity Billing System</h3>
-        <p>Java-based online billing system with JDBC integration for admin use.</p>
-      </div>
-      <div class="project-card">
-        <h3>🚦 Traffic Reward System (IoT)</h3>
-        <p>IoT project for monitoring safe driving and rewarding compliance.</p>
-      </div>
-    </div>
-  </section>
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Java & Backend</h3>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Hibernate</li>
+            <li>RESTful APIs</li>
+            <li>JDBC</li>
+          </ul>
+        </div>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section reveal">
-    <h2 class="section-title">Experience</h2>
-    <div class="timeline">
+        <div class="skill-category">
+          <h3><i class="fab fa-node-js"></i> Node.js Ecosystem</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Multer</li>
+            <li>JWT</li>
+            <li>bcrypt</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Web & Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Context API</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Database Systems</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>SQL</li>
+            <li>Oracle</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Maven</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tasks"></i> Methodologies & Testing</h3>
+          <ul>
+            <li>Agile / Scrum</li>
+            <li>SDLC & STLC</li>
+            <li>Manual Testing</li>
+            <li>Selenium</li>
+            <li>OOP & Debugging</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="card">
+      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+      
       <div class="timeline-item">
-        <h4>Assistant Manager — HDFC Bank (2025)</h4>
-        <p>Handled backend operations, reconciliations, and client support.</p>
-      </div>
-      <div class="timeline-item">
-        <h4>Java Developer Intern — Vision Computers (2023)</h4>
-        <p>Built an online billing system using JDBC and Java Swing.</p>
-      </div>
-      <div class="timeline-item">
-        <h4>Web Developer Intern — Thinklance (2022)</h4>
-        <p>Developed a secure NGO donation portal with payment integration.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="section gray-bg reveal">
-    <h2 class="section-title">Academic Background</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h4>Bachelor of Technology — Electronics & Communication</h4>
-        <p><strong>Priyadarshini Bhagwati College of Engineering, Nagpur</strong><br>Completed: 2024</p>
-      </div>
-      <div class="timeline-item">
-        <h4>Diploma — Computer Technology</h4>
-        <p><strong>Dharampeth Polytechnic, Nagpur</strong><br>Completed: 2021</p>
-      </div>
-      <div class="timeline-item">
-        <h4>Higher Secondary (HSC) — Science</h4>
-        <p><strong>Abhinav Institute of Science, Nagpur</strong><br>Completed: 2019</p>
-      </div>
-      <div class="timeline-item">
-        <h4>Secondary School (SSC)</h4>
-        <p><strong>Jyotiba High School, Nagpur</strong><br>Completed: 2017</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer-dark" id="contact">
-    <div class="footer-inner reveal">
-      <div class="footer-left">
-        <h3>Contact</h3>
-        <p>Let’s connect — you can reach me directly or send a quick message below.</p>
-        <p>📧 <a href="mailto:ashtankarmayur@gmail.com">ashtankarmayur@gmail.com</a></p>
-        <p>📞 <a href="tel:+918483862797">+91 8483862797</a></p>
-        <p>💼 <a href="https://www.linkedin.com/in/mayur-ashtankar-7a5384240/" target="_blank">LinkedIn Profile</a></p>
+        <div class="timeline-header">
+          <h3>Java Developer | <span>Kavya Infoweb Pvt. Ltd.</span></h3>
+          <span class="timeline-date">11/2025 - 07/2026</span>
+        </div>
+        <ul>
+          <li>Architected and maintained scalable web applications utilizing Java, Spring Boot, and Hibernate ORM.</li>
+          <li>Designed and implemented secure RESTful APIs and robust backend microservices to streamline business logic.</li>
+          <li>Optimized complex MySQL relational database queries, schema designs, and transactional consistency.</li>
+          <li>Executed end-to-end debugging, unit testing, troubleshooting, and code refactoring to maximize application uptime and speed.</li>
+          <li>Managed version control and dependency management pipelines using Git and Maven within Agile sprint cycles.</li>
+          <li>Key contributor to <strong>RxIncredible</strong> (Digital Healthcare Platform): integrated Prescription Analysis, Second Opinion, and Online Pharmacy workflows.</li>
+          <li>Engineered core modules for prescription verification, automated doctor/expert assignment, medical report generation, online quotations, invoice generation, payment confirmation, and real-time order/delivery tracking.</li>
+        </ul>
       </div>
 
-      <div class="footer-form">
-        <form id="footerContact" class="contact-form">
-          <input name="name" type="text" placeholder="Your Name" required>
-          <input name="email" type="email" placeholder="Your Email" required>
-          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn hero-btn">Send Message</button>
-        </form>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <h3>Assistant Manager | <span>HDFC Bank</span></h3>
+          <span class="timeline-date">04/2025 - 10/2025</span>
+        </div>
+        <ul>
+          <li>Executed high-volume financial transactions, cash operations, and payments with 100% accuracy and strict audit compliance.</li>
+          <li>Performed daily account reconciliations, balancing books, and ensuring adherence to banking regulatory frameworks.</li>
+          <li>Delivered exceptional client assistance, cross-selling strategic financial instruments and digital banking solutions.</li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="footer-bottom">
-      <p>© 2025 Mayur Ashtankar | Built with ❤️ using HTML, CSS, and JavaScript</p>
-    </div>
+    <!-- Featured Key Projects Section -->
+    <section id="projects" class="card">
+      <h2><i class="fas fa-project-diagram"></i> Featured Key Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>RxIncredible - Digital Healthcare Platform</h3>
+          <p class="project-domain"><strong>Domain:</strong> Healthcare Domain</p>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Hibernate</span><span>MySQL</span>
+          </div>
+          <ul>
+            <li>Contributed to an enterprise digital healthcare ecosystem spanning Prescription Analysis, Second Opinion, and E-Pharmacy sub-systems.</li>
+            <li>Built seamless prescription ingestion pipelines supporting document verification, expert physician assignment, and automated clinical report delivery.</li>
+            <li>Engineered Second Opinion consultation flows encompassing case registration, clinical diagnostic validation, and treatment plan evaluation.</li>
+            <li>Streamlined E-Pharmacy operations including real-time medicine inventory checks, instant quotation engine, payment gateway integration, invoice generation, and courier tracking updates.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Electricity Billing System</h3>
+          <p class="project-domain"><strong>Domain:</strong> Java Desktop Application</p>
+          <div class="project-tech">
+            <span>Java</span><span>JDBC</span><span>MySQL</span>
+          </div>
+          <ul>
+            <li>Developed a standalone desktop database application to automate utility meter reading entries, tariff calculations, and customer bill generation.</li>
+            <li>Implemented robust database connectivity using JDBC and created structured relational tables in MySQL for customer record management.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Traffic Reward System using IoT</h3>
+          <p class="project-domain"><strong>Domain:</strong> Web Development & IoT</p>
+          <div class="project-tech">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>IoT Sensors</span>
+          </div>
+          <ul>
+            <li>Built an interactive web platform to collect and visualize real-time environmental and traffic density data captured by IoT sensor modules.</li>
+            <li>Designed intuitive dashboards and responsive web UI components for analytics presentation.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Internships Section -->
+    <section id="education" class="card">
+      <h2><i class="fas fa-graduation-cap"></i> Education & Internships</h2>
+      
+      <h3>Education</h3>
+      <div class="education-grid">
+        <div class="edu-item">
+          <h4>B.Tech in Electronics & Communication Engineering</h4>
+          <p>Priyadarshini Bhagwati College of Engineering, Nagpur</p>
+          <span class="score">CGPA: 7.40</span>
+        </div>
+        <div class="edu-item">
+          <h4>Diploma in Computer Technology</h4>
+          <p>Dharampeth Polytechnic, Nagpur</p>
+          <span class="score">Percentage: 78.40%</span>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 2rem;">Internship Experience</h3>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <h4>Java Developer Intern | <span>Vision Computers</span></h4>
+          <span class="timeline-date">2023</span>
+        </div>
+        <p>Developed an online utility bill payment interface utilizing Java and JDBC, incorporating administrative controls and user authentication.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <h4>Web Developer Intern | <span>Thinklance</span></h4>
+          <span class="timeline-date">2022</span>
+        </div>
+        <p>Designed and implemented a secure donation platform for a non-profit organization featuring integrated online payment processing.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card text-center">
+      <h2><i class="fas fa-paper-plane"></i> Contact Me</h2>
+      <p>I am open to software engineering and Java development roles. Feel free to reach out!</p>
+      <div class="contact-details">
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:ashtankarmayur@gmail.com">ashtankarmayur@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 8483862797</p>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Nagpur, Maharashtra, India</p>
+        <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mayur-ashtankar-7a5384240" target="_blank">Mayur Ashtankar</a></p>
+        <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/Mayur13-hash" target="_blank">Mayur13-hash</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Mayur Ashtankar. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
